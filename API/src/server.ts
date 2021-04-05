@@ -1,5 +1,5 @@
-//import express from "express";
-import express, { Request, Response } from "express";
+import express from "express";
+import  { Request, Response } from "express";
 const app = express();
 console.clear();
 
@@ -7,12 +7,12 @@ console.clear();
 //Métodos/Verbos HTTP -> POST e GET ...
 
 app.get("/", (request: Request, response: Response) => {
-
-  response.send("Hello World! abc");
-
+    response.send("Hello World! abc");
 });
 
-
+//app.get("/ciclo/listar", (rrequest: Request, response: Response) => {
+ //   response.send("");
+//});
 
 app.listen(3000, () => {
 
